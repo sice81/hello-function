@@ -1,0 +1,27 @@
+{
+  "name": "firebase-function-example",
+  "version": "1.0.0",
+  "description": "This is node.js simple example for google cloud function.",
+  "main": "index.js",
+  "scripts": {
+    "login": "yarn firebase login",
+    "serve": "yarn firebase serve --only functions",
+    "shell": "yarn firebase experimental:functions:shell",
+    "deploy": "yarn firebase deploy --only functions",
+    "build:funcs": "cpx src/* dist",
+    "deps:copy": "cpx package.json dist",
+    "deps:install": "cd dist && yarn",
+    "clean": "rimraf dist"
+  },
+  "author": "jaeik",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^5.12.0",
+    "firebase-functions": "^1.0.2"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "firebase-tools": "^3.17.4",
+    "rimraf": "^2.6.2"
+  }
+}
