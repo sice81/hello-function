@@ -16,4 +16,4 @@ Update `.firebaserc` to use your Firebase project id.
 
 ```
 yarn deploy
-``
+```
